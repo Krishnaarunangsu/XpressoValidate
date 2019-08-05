@@ -59,7 +59,7 @@ class ControllerExec:
 
         :return:
         """
-        p = subprocess.Popen(["xprctl login"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+        p = subprocess.Popen(["xprctl login"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, shell=True)
         print(p.communicate("password\n"))
 
 
