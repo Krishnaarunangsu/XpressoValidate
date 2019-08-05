@@ -26,4 +26,4 @@ print('Docker Installation Check')
 print('***************************************')
 pwd='admin1'
 cmd='xprctl login -u admin1'
-print(check_output("echo {} | sudo -S {}".format(cmd, pwd), shell=True).decode())
+print(check_output("".format(cmd, pwd), shell=True).decode())
