@@ -16,7 +16,7 @@ class ControllerExec:
         #returned_output = subprocess.check_output(cmd)
 
 
-        p = subprocess.Popen(["cd"], stdout=subprocess.PIPE, shell=True)
+        p = subprocess.Popen(["pwd"], stdout=subprocess.PIPE, shell=True)
 
         print(p.communicate())
 
