@@ -54,7 +54,17 @@ class ControllerExec:
         print('Output:', cat)
 
 
+    def get_data(self):
+        """
+
+        :return:
+        """
+        p = subprocess.Popen(["xprctl login"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+        print(p.communicate("password\n"))
+
+
 
 controller_exec=ControllerExec()
-controller_exec.check_git_version()
+# controller_exec.check_git_version()
+controller_exec.get_data()
 
